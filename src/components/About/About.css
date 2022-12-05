@@ -1,0 +1,57 @@
+.about {
+  width: 100%;
+  color: #293154;
+  align-items: center;
+}
+
+.name {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #222d48;
+  color: white;
+}
+
+.name h2 {
+  font-size: 45px;
+  color: #d5c56e;
+  height: 50px;
+}
+
+.bio {
+  width: 60%;
+  font-size: 27px;
+}
+
+.bio svg {
+  font-size: 40px;
+  margin: 0 12px;
+  color: rgba(255, 255, 255, 0.737);
+}
+
+.skills {
+  margin-top: 60px;
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #272e4d;
+}
+
+.skills .list {
+  list-style: none;
+  width: 60%;
+}
+
+.list span {
+  font-size: 20px;
+}
