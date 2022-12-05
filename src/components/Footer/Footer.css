@@ -1,0 +1,25 @@
+:root {
+    --background: #4b63a0;
+  }
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: 200px;
+}
+
+.icons svg {
+    color: white;
+    margin: 20px;
+    font-size: x-large;
+}
+
+.footer p {
+    color: white;
+}
