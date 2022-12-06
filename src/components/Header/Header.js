@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBar from '../Navigation/NavBar'
 
-function Header() {
+function Header(props) {
   return (
-    <div>Header</div>
+    <div>
+    <NavBar setPage={props.setPage} currentPage={props.currentPage} />
+    </div>
   )
 }
 
