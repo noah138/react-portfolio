@@ -16,6 +16,12 @@
   color: white;
 }
 
+.skill,
+.skillList {
+  display: flex;
+  justify-content: center;
+}
+
 .name h2 {
   font-size: 45px;
   color: #d5c56e;
@@ -23,7 +29,7 @@
 }
 
 .bio {
-  width: 60%;
+  width: 100%;
   font-size: 27px;
 }
 
@@ -49,9 +55,36 @@ h1 {
 
 .skills .list {
   list-style: none;
-  width: 60%;
+  width: 100%;
 }
 
 .list span {
   font-size: 20px;
+}
+
+ol {
+  padding-inline-start: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .name h2 {
+    font-size: 40px;
+  }
+
+  .name .bio {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
 }

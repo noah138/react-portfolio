@@ -1,16 +1,13 @@
 import React from "react";
-import { ProjectArray } from "../../helpers/ProjectArray";
-import { useParams } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 
-function Project() {
-  const { id } = useParams();
-  const project = ProjectArray[id];
+function Project({ image, name }) {
   return (
     <div className="project">
-      <h1> {project.name} </h1>
-      <img src={project.image} alt=""/>
-      <BsGithub />
+        <img src={image} alt={name} className="image"/>
+      <h1 target="_blank" href="#">
+        <BsGithub /> {name}
+      </h1>
     </div>
   );
 }

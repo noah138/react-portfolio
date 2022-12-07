@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import "./Contact.css";
 
 const validateEmail = (email) => {
   var re =
@@ -43,11 +44,13 @@ function Contact() {
   function sendMessage(e) {
     e.preventDefault();
 
-    emailjs.sendForm("service_vasgvuh", "service_vasgvuh", "#contactForm").then(
+    emailjs.sendForm("service_vasgvuh", "template_5lanzb7", "#contactForm", "W9qnIsOH_vTz1TdIH").then(
       function (response) {
+        console.log(response.text);
         setFormMessage("Message sent");
       },
       function (error) {
+        console.log(error.text);
         setFormMessage(
           "Your message could not be sent. Please try again or email Noah directly @noahschwartz@live.com"
         );
@@ -56,50 +59,56 @@ function Contact() {
   }
 
   return (
-    <Form id="contactForm">
-      <Form.Group controlId="name">
-        <Form.Label>Your Name</Form.Label>
-        <Form.Control
-          required
-          name="name"
-          placeholder="your name here"
-          onBlur={handleChange}
-        />
-      </Form.Group>
+    <div className="formBg">
+      <div className="formContainer">
+        <h1>Contact Me</h1>
+      </div>
+      <Form id="contactForm">
+        <Form.Group controlId="name">
+          <Form.Label className="label">Name :</Form.Label>
+          <Form.Control
+            className="input"
+            required
+            name="name"
+            onBlur={handleChange}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="email">
-        <Form.Label>Your Email</Form.Label>
-        <Form.Control
-          required
-          type="email"
-          name="email"
-          placeholder="your email here"
-          onBlur={handleChange}
-        />
-      </Form.Group>
+        <Form.Group controlId="email">
+          <Form.Label className="label">Email :</Form.Label>
+          <Form.Control
+            className="input"
+            required
+            type="email"
+            name="email"
+            onBlur={handleChange}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="message">
-        <Form.Label>Message</Form.Label>
-        <Form.Control
-          required
-          name="message"
-          as="textarea"
-          rows="5"
-          placeholder="your message here"
-          onBlur={handleChange}
-        />
-      </Form.Group>
+        {formMessage && (
+          <div>
+            <p className="formMessage">{formMessage}</p>
+          </div>
+        )}
 
-      {formMessage && (
-        <div>
-          <p className="formMessage">{formMessage}</p>
+        <Form.Group controlId="message">
+          <Form.Label className="label">Message :</Form.Label>
+          <Form.Control
+            className="input"
+            required
+            name="message"
+            as="textarea"
+            rows="5"
+            onBlur={handleChange}
+          />
+        </Form.Group>
+        <div className="submit">
+          <Button onSubmit={sendMessage} className="btn input" type="submit">
+            Submit
+          </Button>
         </div>
-      )}
-
-      <Button onSubmit={sendMessage} className="btn" type="submit">
-        Submit
-      </Button>
-    </Form>
+      </Form>
+    </div>
   );
 }
 

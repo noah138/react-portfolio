@@ -1,0 +1,76 @@
+#contactForm {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 480px;
+}
+
+.formContainer {
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  color: #2f3868;
+  font-size: 40px;
+}
+
+.formBg {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label,
+.formMessage {
+  color: rgb(187, 166, 96);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formMessage {
+  color: rgb(193, 94, 63);
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -3px;
+}
+
+.input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.btn {
+  background-color: rgb(36, 45, 92);
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  border-radius: 5px;
+  outline: 0;
+  margin: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgb(85, 77, 120);
+  width: 155px;
+  margin-bottom: -50px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}

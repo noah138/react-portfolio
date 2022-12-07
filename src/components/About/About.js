@@ -20,16 +20,21 @@ function about() {
         <h1>Skills</h1>
         <ol className="list">
           <li className="item">
-            <h2> Front End </h2>
-            <span> ReactJS, HTML, CSS, NPM, BootStrap, TailWindCss</span>
+            <h2 className="skillList"> Front End </h2>
+            <span className="skill">
+              {" "}
+              ReactJS, HTML, CSS, NPM, BootStrap, TailWindCss
+            </span>
           </li>
           <li className="item">
-            <h2> Back End </h2>
-            <span>NodeJS, ExpressJS, GraphQL, MySQL, MongoDB,</span>
+            <h2 className="skillList"> Back End </h2>
+            <span className="skill">
+              NodeJS, ExpressJS, GraphQL, MySQL, MongoDB
+            </span>
           </li>
           <li className="item">
-            <h2> Languages </h2>
-            <span>JavaScript</span>
+            <h2 className="skillList"> Languages </h2>
+            <span className="skill"> JavaScript </span>
           </li>
         </ol>
       </div>
