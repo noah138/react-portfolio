@@ -12,21 +12,44 @@ import { BsLinkedin } from "react-icons/bs";
 function Resume() {
   return (
     <div>
-      <h1 className="resume">My Resume</h1>
-      <div className="resume">
-        <div>
-          My cover letter/short bio will go here.
-          <p>
-            <a href="https://www.linkedin.com/in/noahschwartz99/">
-              <BsLinkedin />
-            </a>
-          </p>
-          <div className='downloadContainer'>
-                <button className='downloadBtn'><a className='download' href={require(`../../assets/images/Resume.png`)} target="_blank" download>Download My Resume</a></button>
-            </div>
+      <h1>Skills</h1>
+      <div className="skills flex">
+        <div className="list">
+          <li className="item">
+            <h2 id="title" className="skillList"> Front End </h2>
+            <span className="skill">
+              ReactJS, HTML, CSS, NPM, BootStrap, TailWindCss
+            </span>
+          </li>
+        </div>
+        <div id="middle" className="list">
+          <li className="item">
+            <h2 id="title" className="skillList"> Back End </h2>
+            <span className="skill">
+              NodeJS, ExpressJS, GraphQL, MySQL, MongoDB
+            </span>
+          </li>
+        </div>
+        <div className="list">
+          <li className="item">
+            <h2 id="title" className="skillList"> Languages </h2>
+            <span className="skill"> JavaScript </span>
+          </li>
         </div>
       </div>
-      <div className="event">.
+      <div className="downloadContainer">
+        <button className="downloadBtn">
+          <a
+            className="downloadText"
+            href={require(`../../assets/images/Resume.png`)}
+            download
+          >
+            Download My Resume
+          </a>
+        </button>
+      </div>
+      <div className="event">
+        .
         <VerticalTimeline lineColor="#2f3868">
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -37,7 +60,7 @@ function Resume() {
             <h3 className="vertical-timeline-element-title">
               UW Full-Stack Coding Bootcamp
             </h3>
-            <p>Front end and back end skills, primarily in </p>
+            <p>Front end and back end skills, primarily in Javascript</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
@@ -49,7 +72,6 @@ function Resume() {
               Tufts University
             </h3>
             <h4 className="vertical-timeline-element-subtitle">Medford, MA</h4>
-            <h4 className="vertical-timeline-element-subtitle"></h4>
             <p>Bachelor's Degree in Biology</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

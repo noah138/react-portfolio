@@ -8,9 +8,15 @@ function footer() {
   return (
     <div className="footer">
       <div className="icons">
-        <BsLinkedin />
-        <BsGithub />
-        <SiLeetcode />
+        <a href="https://www.linkedin.com/in/noahschwartz99/" target="_blank">
+          <BsLinkedin />
+        </a>
+        <a href="https://github.com/noah138/" target="_blank">
+          <BsGithub />
+        </a>
+        <a href="https://leetcode.com/noah138/" target="_blank">
+          <SiLeetcode />
+        </a>
       </div>
       <p> &copy; 2022 by Noah Schwartz</p>
     </div>

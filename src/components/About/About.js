@@ -11,32 +11,28 @@ function about() {
         <h2> Hi, I'm Noah </h2>
         <div className="bio">
           <p> A beginner web developer </p>
-          <BsLinkedin />
-          <BsGithub />
-          <SiLeetcode />
+          <a href="https://www.linkedin.com/in/noahschwartz99/" target="_blank">
+            <BsLinkedin />
+          </a>
+          <a href="https://github.com/noah138/" target="_blank">
+            <BsGithub />
+          </a>
+          <a href="https://leetcode.com/noah138/" target="_blank">
+            <SiLeetcode />
+          </a>
         </div>
       </div>
-      <div className="skills">
-        <h1>Skills</h1>
-        <ol className="list">
-          <li className="item">
-            <h2 className="skillList"> Front End </h2>
-            <span className="skill">
-              {" "}
-              ReactJS, HTML, CSS, NPM, BootStrap, TailWindCss
-            </span>
-          </li>
-          <li className="item">
-            <h2 className="skillList"> Back End </h2>
-            <span className="skill">
-              NodeJS, ExpressJS, GraphQL, MySQL, MongoDB
-            </span>
-          </li>
-          <li className="item">
-            <h2 className="skillList"> Languages </h2>
-            <span className="skill"> JavaScript </span>
-          </li>
-        </ol>
+      <h1>About Me</h1>
+      <div className="aboutMe">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+        <br></br>
+        <br></br>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
     </div>
   );
